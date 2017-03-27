@@ -15,7 +15,7 @@
 #navbar {
   list-style-type:none;
   height: 75px; 
-  width: 100%;
+  width: 75%;
   display: inline;
   overflow: hidden; 
   
@@ -35,6 +35,10 @@
 
 #navbar a:hover {
   background-color: #111111;
+}
+
+.rightNav {
+    
 }
 
 #titlediv{
