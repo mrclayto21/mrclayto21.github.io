@@ -1,3 +1,130 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#universal {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+#navcontainer {
+  background: #504741;
+  height: 60px;
+}
+
+#navbar {
+  list-style-type:none;
+  height: 75px; 
+  width: 100%;
+  display: inline;
+  overflow: hidden; 
+  
+}
+
+#navbar li {
+  font-size: 20px;
+  float: left;
+}
+
+#navbar a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+#navbar a:hover {
+  background-color: #111111;
+}
+
+#titlediv{
+  display: inline-block;
+  background-image: url("https://github.com/mrclayto21/mrclayto21.github.io/blob/master/LuckyDucky.jpg?raw=true");
+  background-image: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 100%;
+  height: 340px;
+}
+#titleheading {
+  float: left;
+  font-size: 75px;
+  color: #A3575A;
+}
+
+#subdiv {
+  width: 100%;
+  height: auto;
+  margin: 0, auto;
+  padding: 0px;
+  color: #656160;
+}
+
+#subtitle {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.body1 {
+  border: 1px dotted red;
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 85%; 
+  height: 600px;
+}
+
+.inner {
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leftscroll {
+  float: left;
+  width: 15%;
+  height: 400px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+#bodyscroll {
+  border: 1px dashed blue;
+  margin-left: 16%;
+  max-width: 82%;
+  height: 500px;
+  overflow: scroll;
+}
+
+#footer {
+  padding: 2em;
+  background-color: #504741;
+  clear: left;
+  text-align: center;
+  color: white;
+}
+
+#fortesting {
+  height: 900px;
+  width: 800px;
+}
+#fortesting2 {
+  height: 900px;
+  width: 800px;
+}
+
+#picturebutton1 {
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+  background-image: url("https://cdn.pixabay.com/photo/2013/04/07/21/30/croissant-101636_1280.jpg");
+  background-position: center center;
+  border: none;
+}
