@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'recipe/add'
-
+  root 'recipe#add'
+  
   get 'welcome/index'
   root 'welcome#index'
 
