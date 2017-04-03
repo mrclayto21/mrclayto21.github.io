@@ -2,17 +2,24 @@
 <div id="navcontainer">
   <ul id="signInContainer">
         <% if current_user %>
-        <li id="testtest">Signed in as <strong><%= current_user.name %></strong></li>
+        <li>Signed in as <strong><%= current_user.name %></strong>
+        </li>
         <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
       <% else %>
         <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+          <script>
+          $(function() {
+            $(session).toggle();
+            console.log("here");
+          });
+        </script>
       <% end %>
   </ul>
       <ul id="navbar">
         <li><a href= "/" >Home</a></li>
-        <li><a href="recipe/add">Add Recipe</a></li>
         <li><a href="nothing.erb">Share</a></li>
         <li><a href="nothing.erb">About Us</a></li>
+        <li id="session"><a href="recipe/add" class="not-active">Add Recipe</a></li>
       </ul>
   </div>
 
@@ -45,28 +52,28 @@
     </div>
   <div id="bodyscroll">
     <div class="imgContainer">
-      <img src="https://cdn.pixabay.com/photo/2017/02/14/04/12/cake-2064637_1280.jpg"
+      <img src= ""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Want pie?</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src="https://cdn.pixabay.com/photo/2014/02/17/15/25/bun-268237_1280.jpg"
+      <img src= ""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Or Cupcakes?</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src="https://cdn.pixabay.com/photo/2013/02/19/16/00/france-confectionery-83373_1280.jpg"
+      <img src=""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Cake cake cake cake</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src="https://cdn.pixabay.com/photo/2016/11/22/22/02/beach-1850818_1280.jpg"
+      <img src=""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Pineapples!</a></div>

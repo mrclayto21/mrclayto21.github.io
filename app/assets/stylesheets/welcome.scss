@@ -20,6 +20,10 @@
   height: 60px;
 }
 
+.not-active {
+  display: none;
+}
+
 #signInContainer {
   float: right;
   display: inline;
@@ -218,18 +222,6 @@
   max-width: 200px;
 }
 
-
-#picturebutton1 {
-  height: 100px;
-  width: 100px;
-  color: white;
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px;
-  background-image: url("https://cdn.pixabay.com/photo/2013/04/07/21/30/croissant-101636_1280.jpg");
-  background-position: center center;
-  border: none;
-}
-
 .imgContainer {
   position: relative;
   width: 50%;
@@ -268,4 +260,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.image {
+  background-image: url("mrclayto21.github.io/diary-2029395_640.png");
+  height: auto;
+  width: auto;
 }
