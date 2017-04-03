@@ -9,7 +9,7 @@ class RecipeController < ApplicationController
     
     if @recipe.save
       byebug
-      redirect_to @article
+      redirect_to @recipe
     else
       render 'new'
     end
@@ -38,6 +38,7 @@ class RecipeController < ApplicationController
 end
 
 private
-    def article_params
+    def recipe_params
       params.require(:recipe).permit(:title, :text)
     end
+end

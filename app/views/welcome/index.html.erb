@@ -1,12 +1,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div id="navcontainer">
+  <ul id="signInContainer">
+        <% if current_user %>
+        <li id="testtest">Signed in as <strong><%= current_user.name %></strong></li>
+        <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+      <% else %>
+        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+      <% end %>
+  </ul>
       <ul id="navbar">
-        <li><a href="nothing.erb">Home</a></li>
+        <li><a href= "/" >Home</a></li>
         <li><a href="recipe/add">Add Recipe</a></li>
         <li><a href="nothing.erb">Share</a></li>
         <li><a href="nothing.erb">About Us</a></li>
-        <li class="rightNav"><a href="signup">Sign Up</a></li>
-        <li class="rightNav"><a href="signIn">Sign In</a></li>
       </ul>
   </div>
 

@@ -20,6 +20,21 @@
   height: 60px;
 }
 
+#signInContainer {
+  float: right;
+  display: inline;
+  margin-right: 10px;
+  list-style-type: none;
+  color: white;
+}
+
+#signInContainer a {
+  display: inline;
+  text-decoration: none;
+  color: white;
+}
+
+
 #tagcontainer {
   background: #5E92FF;
   height: 60px;
@@ -30,6 +45,12 @@
   height: 60px;
 }
 
+#footcontainer li {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
 #navbar  {
   list-style-type: none;
   height: 75px; 
