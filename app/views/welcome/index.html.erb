@@ -1,4 +1,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="navcontainer">
   <ul id="signInContainer">
         <% if current_user %>
@@ -16,10 +25,14 @@
       <% end %>
   </ul>
       <ul id="navbar">
-        <li><a href= "/" >Home</a></li>
-        <li><a href="nothing.erb">Share</a></li>
-        <li><a href="nothing.erb">About Us</a></li>
+        <li id="sessionActive"><a href= "/" >Home</a></li>
         <li id="session"><a href="recipe/add" class="not-active">Add Recipe</a></li>
+        <li data-href="https://ide.c9.io/mrclaytor/itsc3155rubyprojects"         data-layout="link" 
+        data-mobile-iframe="true">
+          <a class="fb-xfbml-parse-ignore" 
+          target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fide.c9.io%2Fmrclaytor%2Fitsc3155rubyprojects&amp;src=sdkpreparse">
+          Share</a></div></li>
       </ul>
   </div>
 
@@ -52,28 +65,28 @@
     </div>
   <div id="bodyscroll">
     <div class="imgContainer">
-      <img src= ""
+      <img src= "https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Want pie?</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src= ""
+      <img src= "https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Or Cupcakes?</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src=""
+      <img src="https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Cake cake cake cake</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src=""
+      <img src="https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Pineapples!</a></div>
@@ -85,5 +98,6 @@
 <div id="footcontainer">
   <ul id="footer">
     <li>Lucky Ducky Foocipes ©</li>
+    <li><a href="nothing.erb">About Us</a></li>
   </ul>
 </div>

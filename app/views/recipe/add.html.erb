@@ -1,6 +1,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<div id="navcontainer">
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
+<div id="navcontainer">
+  <ul id="signInContainer">
+        <% if current_user %>
+        <li>Signed in as <strong><%= current_user.name %></strong>
+        </li>
+        <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+      <% else %>
+        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+          <script>
+          $(function() {
+            $(session).toggle();
+            console.log("here");
+          });
+        </script>
+      <% end %>
+  </ul>
+      <ul id="navbar">
+        <li id="sessionActive"><a href= "/" >Home</a></li>
+        <li id="session"><a href="recipe/add" class="not-active">Add Recipe</a></li>
+        <li data-href="https://ide.c9.io/mrclaytor/itsc3155rubyprojects"         data-layout="link" 
+        data-mobile-iframe="true">
+          <a class="fb-xfbml-parse-ignore" 
+          target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fide.c9.io%2Fmrclaytor%2Fitsc3155rubyprojects&amp;src=sdkpreparse">
+          Share</a></div></li>
+      </ul>
   </div>
 
 <div id="universal">
@@ -9,12 +36,12 @@
   </div>
   <div id="navcontainer">
     <p id="sub">
-      <ul id="tagbar">
-        <li><a href="nothing.erb">Breakfast</a></li>
-        <li><a href="nothing.erb">Lunch</a></li>
-        <li><a href="nothing.erb">Dinner</a></li>
-        <li><a href="nothing.erb">Dessert</a></li>
-      </ul>
+      <!--<ul id="tagbar">-->
+      <!--  <li><a href="nothing.erb">Breakfast</a></li>-->
+      <!--  <li><a href="nothing.erb">Lunch</a></li>-->
+      <!--  <li><a href="nothing.erb">Dinner</a></li>-->
+      <!--  <li><a href="nothing.erb">Dessert</a></li>-->
+      <!--</ul>-->
     </p>
   </div>
   <br>
@@ -23,12 +50,12 @@
 <div class="body1">
   <div class="inner">
   <div id="leftscroll">
-      <ul id="subtagbar">
-        <li><a href="nothing.erb">Gluten-free</a></li>
-        <li><a href="nothing.erb">Lactose Free</a></li>
-        <li><a href="nothing.erb">Vegan</a></li>
-        <li><a href="nothing.erb">Vegetarian</a></li>
-      </ul>
+      <!--<ul id="subtagbar">-->
+      <!--  <li><a href="nothing.erb">Gluten-free</a></li>-->
+      <!--  <li><a href="nothing.erb">Lactose Free</a></li>-->
+      <!--  <li><a href="nothing.erb">Vegan</a></li>-->
+      <!--  <li><a href="nothing.erb">Vegetarian</a></li>-->
+      <!--</ul>-->
     </div>
   <div id="bodyscroll">
       <p>Form will go here</p>
@@ -38,5 +65,6 @@
 <div id="footcontainer">
   <ul id="footer">
     <li>Lucky Ducky Foocipes ©</li>
+    <li><a href="nothing.erb">About Us</a></li>
   </ul>
 </div>
