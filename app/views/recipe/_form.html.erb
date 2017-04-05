@@ -1,16 +1,23 @@
-<%= form_for @recipe do |f| %>
-    <%= f.label :category %>
-    <%= f.select :category_id, options_for_select(Category.all.map {|c|[c.title, c.id]})%>
-    
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-    
-    <%= f.label :instruction %>
-    <%= f.text_area (:instruction, size: "50x10") %>
-    
-    <%= f.fields_for :ingredient do |i| %>
-        <%= i.label :name %>
-        <%= i.text_field :name %>
-<% end %>
-
-<%= f.submit "Submit" %>
+      <h2>Add a Recipe</h2>
+      <%= form_for @recipe do |f| %>
+        <p>
+          <%= f.label :category %>
+          <%= f.select :category_id, options_for_select(Category.all.map {|c|[c.title, c.id]})%>
+        </p>
+        <p>
+          <%= f.label :title %>
+          <%= f.text_field :title %>
+        </p>
+        <p>
+          <%= f.label :instruction %>
+          <%= f.text_area :instruction %>
+        </p>
+        <p>
+          <%= f.fields_for :ingredient do |i| %>
+              <%= i.label :name %>
+              <%= i.text_field :name %>
+        </p>
+        <p>
+          <%= f.submit %>
+        </p>
+        <% end %>
