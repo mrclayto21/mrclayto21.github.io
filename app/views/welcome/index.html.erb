@@ -36,10 +36,13 @@
       </ul>
   </div>
 
-<div id="universal">
+<div id="tocenter">
   <div id="titlediv">
     <h1 id="titleheading"></h1>
   </div>
+</div>
+<div id="universal">
+
   <div id="navcontainer">
     <p id="sub">
       <ul id="tagbar">
@@ -64,29 +67,46 @@
       </ul>
     </div>
   <div id="bodyscroll">
+    <!-- Testing area -->
+      <table>
+        <tr>
+          <th>Recipe Name</th>
+          <th>Ingredients</th>
+          <th>Directions</th>
+          <th>Tags</th>
+        </tr>
+        <%= @recipes.each do |recipe| %>
+          <tr>
+            <td><%= recipe.title %></td>
+            <td><%= recipe.ingredients %></td>
+            <td><%= recipe.directions %></td>
+            <td><%= recipe.tags %></td>
+          </tr>
+        <% end %>
+      </table>
     <div class="imgContainer">
-      <img src= "https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
+      <img src= ""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Want pie?</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src= "https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
+      <img src= ""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Or Cupcakes?</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src="https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
+      <img src=""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Cake cake cake cake</a></div>
       </div>
     </div>
     <div class="imgContainer">
-      <img src="https://raw.githubusercontent.com/mrclayto21/mrclayto21.github.io/c9a7d585cf412924f6cae4282c561d064d2404b5/Aduck.jpg"
+      <img src=""
       alt="Pie" class="image">
       <div class="overlay">
         <div class="text"><a href="nothing">Pineapples!</a></div>
