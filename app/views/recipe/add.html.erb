@@ -36,6 +36,7 @@
   </div>
   <div id="navcontainer">
     <p id="sub">
+      <h2>Add a Recipe</h2>
       <!--<ul id="tagbar">-->
       <!--  <li><a href="nothing.erb">Breakfast</a></li>-->
       <!--  <li><a href="nothing.erb">Lunch</a></li>-->
@@ -50,7 +51,25 @@
 <div class="body1">
     <div id="recipeform">
       <h2>Add a Recipe</h2>
-      <p>this is not done</p>
+      <%= form_for :recipe do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :ingredients %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+   <p>
+    <%= f.label :directions %><br>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
   </div>
 </div>
 
