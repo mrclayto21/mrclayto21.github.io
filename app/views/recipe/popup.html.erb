@@ -1,0 +1,49 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<div id="popup">
+<h2>Add a Recipe</h2>
+      <%= form_for :recipe do |f| %>
+ <p>
+        <button> Breakfast </button>
+        <button> Lunch </button>
+        <button> Dinner </button>
+        <button> Dessert </button>
+ </p>
+ 
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :ingredients %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+   <p>
+    <%= f.label :directions %><br>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+        <button> Tags Go Here </button>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>
+
+<script>
+    var showPopup = function(event) {
+        event.preventDefault();
+        document
+            .getElementById('popup')
+            .style.display = 'block';
+    };
+    
+    document
+        .getElementById('session')
+        .addEventListener('click', showPopup);
+</script>

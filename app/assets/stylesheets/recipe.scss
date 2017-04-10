@@ -256,3 +256,24 @@
   margin-left: 45%;
   color:#5E92FF;
 }
+
+button {
+  background-color: #5E92FF;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #111111;
+  transition-duration: 0.4s;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+}
