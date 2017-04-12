@@ -37,7 +37,7 @@
   </div>
   <div id="navcontainer">
     <p id="sub">
-      <h2>Add a Recipe</h2>
+      <h2 id="titleH2">Add a Recipe</h2>
     </p>
   </div>
   <br>
@@ -45,39 +45,49 @@
 
 <div class="body1">
     <div id="recipeform">
+      <div id="centerRecipe">
       <h2>Add a Recipe</h2>
       <%= form_for :recipe do |f| %>
- <p>
-        <button> Breakfast </button>
-        <button> Lunch </button>
-        <button> Dinner </button>
-        <button> Dessert </button>
- </p>
- 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :ingredients %><br>
-    <%= f.text_area :text %>
-  </p>
- 
-   <p>
-    <%= f.label :directions %><br>
-    <%= f.text_area :text %>
-  </p>
-  <p>
-        <button> Tags Go Here </button>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+     <p>
+       <select>
+         <option value="1">Breakfast</option>
+         <option value="2">Lunch</option>
+         <option value="3">Dinner</option>
+         <option value="4">Dessert</option>
+         <option value="5">Drink</option>
+       </select>
+     </p>
+     
+      <p>
+        <%= f.label :title %><br>
+        <%= f.text_field :title, :maxlength => 40, :size => 60 %>
+      </p>
+     
+      <p>
+        <%= f.label :ingredients %><br>
+        <%= f.text_area :text, cols: "60", rows: "10"%>
+      </p>
+     
+       <p>
+        <%= f.label :directions %><br>
+        <%= f.text_area :text, cols: "60", rows: "10" %>
+      </p>
+      <p>
+        <select multiple>
+          <option value="6">Vegetarian</option>
+          <option value="7">Lactose-free</option>
+          <option value="8">Under 600 calories</option>
+          <option value="9">Spicy</option>
+        </select>
+      </p>
+      <p>
+        <%= f.submit %>
+      </p>
+    <% end %>
+    </div>
   </div>
 </div>
-
+<br>
 <div id="footcontainer">
   <ul id="footer">
     <li>Lucky Ducky Foocipes ©</li>
