@@ -73,9 +73,31 @@
   overflow: hidden;
 }
 
-#subtagbar {
+#subtagbar ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
 }
+
+#subtagbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#subtagbar li a.active {
+  background-color: black;
+  color: white;
+}
+
+#subtagbar li a:hover:not(.active) {
+  background-color: black;
+  color: white;
+}
+
 
 #footer {
   list-style-type: none;
@@ -130,12 +152,6 @@
   
 }
 
-#subtagbar a {
-  text-decoration: initial;
-  color: black;
-  padding: 5px;
-  display: block;
-}
 
 #navbar a:hover {
   background-color: #111111;
@@ -206,7 +222,7 @@
   float: left;
   width: 20%;
   height: 400px;
-  overflow-x:hidden;
+  overflow-x: hidden;
   overflow-y:scroll;
 }
 
