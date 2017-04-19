@@ -26,7 +26,7 @@
   </ul>
       <ul id="navbar">
         <li id="sessionActive"><a href= "/" >Home</a></li>
-        <li id="session"><a href="recipe/add" class="not-active">Add Recipe</a></li>
+        <li id="session"><a href="recipe/new" class="not-active">Add Recipe</a></li>
         <li data-href="https://ide.c9.io/mrclaytor/itsc3155rubyprojects"         data-layout="link" 
         data-mobile-iframe="true">
           <a class="fb-xfbml-parse-ignore" 
@@ -42,14 +42,14 @@
   </div>
 </div>
 <div id="universal">
-
+<!-- separate -->
   <div id="navcontainer">
     <p id="sub">
       <ul id="tagbar">
-        <li><a href="nothing.erb">Breakfast</a></li>
-        <li><a href="nothing.erb">Lunch</a></li>
-        <li><a href="nothing.erb">Dinner</a></li>
-        <li><a href="nothing.erb">Dessert</a></li>
+        <li><a href=".">Breakfast</a></li>
+        <li><a href=".">Lunch</a></li>
+        <li><a href=".">Dinner</a></li>
+        <li><a href=".">Dessert</a></li>
       </ul>
     </p>
   </div>
@@ -71,23 +71,8 @@
       </ul>
   </div>
   <div id="bodyscroll">
-    <!-- Testing area -->
-      <table>
-        <tr>
-          <th>Recipe Name</th>
-          <th>Ingredients</th>
-          <th>Directions</th>
-          <th>Tags</th>
-        </tr>
-        <%= @recipes.each do |recipe| %>
-          <tr>
-            <td><%= recipe.title %></td>
-            <td><%= recipe.ingredients %></td>
-            <td><%= recipe.directions %></td>
-            <td><%= recipe.tags %></td>
-          </tr>
-        <% end %>
-      </table>
+    
+      <br>
     <div class="imgContainer">
       <img src= ""
       alt="Pie" class="image">

@@ -8,15 +8,18 @@
 // #5E92FF - blue
 // #A8C4FF - light light blue
 
+
 #universal {
   width: 90%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 #navcontainer {
   background: #5E92FF;
+  // opacity: .8;
   height: 60px;
 }
 
@@ -170,12 +173,11 @@
 }
 
 #titlediv{
-
   display: inline-block;
   background-image: url("https://github.com/mrclayto21/mrclayto21.github.io/blob/master/LuckyDuckyRedo-01.jpg?raw=true");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 750px;
+  width: 100%;
   height: 250px;
 }
 
@@ -208,6 +210,8 @@
   left: 0;
   width: 90%; 
   height: 600px;
+  // background: url("https://github.com/mrclayto21/mrclayto21.github.io/blob/master/background-01.jpg?raw=true") no-repeat center center fixed;
+  background-size: 80%;
 }
 
 .inner {
@@ -231,6 +235,7 @@
   max-width: 82%;
   height: 500px;
   overflow: scroll;
+
 }
 
 #pagefooter {

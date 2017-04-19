@@ -13,10 +13,14 @@
 ActiveRecord::Schema.define(version: 20170405184139) do
 
   create_table "recipes", force: :cascade do |t|
-    t.string   "title"
+    t.text     "prime"
+    t.text     "name"
     t.text     "ingredients"
     t.text     "directions"
-    t.text     "tags"
+    t.text     "prep"
+    t.text     "complete"
+    t.text     "secondary"
+    t.text     "user"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

@@ -47,7 +47,7 @@
     <div id="recipeform">
       <div id="centerRecipe">
       <h2>Add a Recipe</h2>
-      <%= form_for :recipe do |f| %>
+      <%= form_for :recipes, url: recipes_path do |f| %>
      <p>
        <select>
          <option value="1">Breakfast</option>

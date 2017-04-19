@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   get 'sessions/create'
   
   resources :sessions, only: [:create, :destroy]
-  resource :home, only: [:show]
-  resources :recipesrails
+  resources :welcome, only: [:show]
+  resource :recipe
   
   get 'welcome/index'
   root 'welcome#index'
   
-  get 'recipe/add' => 'recipe#add'
+  get 'recipe/new' => 'recipe#new'
 end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
